@@ -1,0 +1,61 @@
+{{<layout}}
+
+{{$pageTitle}}
+    Enter your business details - Business matching - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Enter your Self Assessment details</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business matching</p>
+            </header>
+
+            <p class="lede">We will attempt to match your details against information we currently hold.</p>
+
+            <form method="post">
+                <fieldset>
+                    <legend class="visuallyhidden">Enter your business details</legend>
+
+                    <div class="form-group">
+                        <label class="form-label" for="partner_name">Partnership name
+                            <span class="form-hint">This is the name you registered with HMRC.</span>
+                        </label>
+                        <input class="form-control" id="partner_name" type="text" name="partner_name" value="">
+                    </div>
+
+                   <div class="form-group">
+                        <label class="form-label" for="utr">Partnership Self Assessment Unique Tax Reference (UTR)
+                            <span class="form-hint">The Partnership Self Assessment UTR can be made up of 10 or 13 numbers. If it&#8217;s 13 numbers, enter only the last 10 numbers.</span>
+                        </label>
+                        <input class="form-control" id="utr" type="text" name="utr" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <details>
+                            <summary>
+                                <span class="summary">Where to find your UTR</span>
+                            </summary>
+                            <div class="panel panel-border-narrow">
+                                <p>You can find your Partnership Self Assessment UTR in the header of any letter issued by HMRC. It may be labelled 'Tax Reference', 'UTR' or 'Official Use'.</p>
+                                <p>If you can't find your Partnership Self Assessment UTR, <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment">call the helpline</a>. HMRC will send you it by post - they can’t tell you it over the phone.</p>
+                            </div>
+                        </details>
+                    </div>
+
+                </fieldset>
+
+                <a href="confirm" class="button" type="submit" id="save-and-continue">Match</a>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

@@ -1,0 +1,107 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Who is your professional advisor? - Business activities - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Who is your professional adviser?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form method="post">
+
+                <input type="hidden" name="next-page" value="tax-matters"/>
+
+                <fieldset>
+                    <legend class="visuallyhidden">What is the name and trading name of your professional advisor</legend>
+                    <div class="form-group">
+                        <label class="form-label" for="first-name">Name</label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="middle-name">Trading name (if different)</label>
+                        <input type="text"  class="form-control" id="middle-name">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-group">
+                		<fieldset class="inline">
+                            <legend class="form-label">Do they have a UK address?</legend>
+                			<label class="block-label" for="radio-inline-2-1" >
+                				<input id="radio-inline-2-1" type="radio"  name="ukorover" value="false" checked="checked" >Yes
+                			</label>
+                			<label class="block-label" for="radio-inline-2-2" >
+                				<input id="radio-inline-2-2" type="radio" name="ukorover" value="true">No
+                			</label>
+                		</fieldset>
+                	</div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-group">
+                        <label for="company-address1" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="company-address1">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-address2" class="form-label visuallyhidden">Address line 2</label>
+                        <input type="text" class="form-control" id="company-address2">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-address3" class="form-label visuallyhidden">Town/City</label>
+                        <input type="text" class="form-control" id="company-address3">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-address4" class="form-label visuallyhidden">County (optional)</label>
+                        <input type="text" class="form-control" id="company-address4">
+                    </div>
+
+                    <div id="count">
+                        <div id="zip" class="form-group">
+                            <label for="postcode-name" class="form-label">Postcode</label>
+                            <input type="text" class="form-control form-control-1-4" id="postcode-name" maxlength="8">
+                        </div>
+                    </div>
+
+                    <div id="over">
+                        <div class="form-group">
+                            <label for="country-name" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="country-name">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}
+
+<script>
+$("#over").hide();
+$("#radio-inline-2-1").on('click', function() {
+  $("#over").hide();
+  $("#count").show();
+});
+</script>
+
+<script>
+$("#radio-inline-2-2").on('click', function() {
+  $("#over").show();
+  $("#count").hide();
+});
+</script>

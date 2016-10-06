@@ -1,0 +1,53 @@
+{{<layout}}
+
+{{$pageTitle}}
+    Update your information - Your application - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <header class="page-header">
+                <h1 class="heading-xlarge">Update your information</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Your registration</p>
+            </header>
+            <p>If something has changed in your business which is relevant to Money Laundering Regulations, you must amend and re-submit your application for anti-money laudering supervision.</p>
+            <p>There will be an additional fee to pay if you increase the number of responsible people or trading premises.</p>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <ul class="grid-layout column-two-thirds progress-steps progress-steps__amend">
+            {{#sections}}
+            <li>
+                <a href="{{editlink}}" class="progress-step {{#status}}progress-step__complete{{/status}}" aria-label="{{name}}. {{message}} You can view and amend your information.">
+                    <div class="grid-layout column-two-thirds progress-step--details">
+                        <h2 class="heading-small">{{name}}</h2>
+                        <p>{{message}}</p>
+                    </div>
+                    <div class="grid-layout column-one-third progress-step--status {{#status}}progress-step__complete{{/status}}">
+                        <div class="column-two-thirds progress-step--status-time">
+                            <p class="font-xsmall">View and
+                                <br />amend your
+                                <br />information</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {{/sections}}
+        </ul>
+        <div class="column-one-third reg-step--submit">
+            <div class="grid-row statusblock declaration">
+                <h2 class="heading-small">Submit amended application</h2>
+                <p>You don't need to re-submit your application until you've made changes to it.</p>
+                <div class="form-group">
+                    <a href="../amend-application/who-is-registering" class="button" type="submit">Submit amendment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/main}}
+
+{{/layout}}

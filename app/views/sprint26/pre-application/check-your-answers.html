@@ -1,0 +1,80 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Check your answers - Pre-application - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Check your answers</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Pre-application</p>
+            </header>
+
+            <div class="panel panel-border-wide">
+                <p>You&#8217;re applying to register the following business for anti-money laundering supervision:</p>
+            </div>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Your business</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>Your Organisation, Street Name, Town, County, AB1 2DE</p>
+                <footer class="group">
+                    <p><a href="../confirm" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Your business&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">What&#8217;s your business structure?</h2>
+                <p><span class="visuallyhidden">Answer: </span>Limited company</p>
+                <footer class="group">
+                    <p><a href="structure" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;What&#8217;s your business structure?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">What&#8217;s your company registration number?</h2>
+                <p><span class="visuallyhidden">Answer: </span>01234567</p>
+                <footer class="group">
+                    <p><a href="registration-number" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;What&#8217;s your company registration number?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">What&#8217;s your type of business?</h2>
+                <p><span class="visuallyhidden">Answer: </span>Trust</p>
+                <footer class="group">
+                    <p><a href="business-type" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;What&#8217;s your business type?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">What do you need to register?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <ul class="list list-bullet">
+                {{>includes/business-type}}
+                </ul>
+                <footer class="group">
+                    <p><a href="activities" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;What do you need to register?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <form method="post">
+                <div class="form-group">
+                    <input type="hidden" name="next-page" value="../summary"/>
+                    <input type="submit" class="button" value="Confirm and start application">
+                </div>
+            </form>
+
+            <!-- <p><a href="#">Print this page</a></p> -->
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

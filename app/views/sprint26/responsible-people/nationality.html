@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$pageTitle}}
+  What is the nationality of this person? - Responsible people - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What is the nationality of {{>includes/person}}?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Responsible people</p>
+            </header>
+
+            <form class="form" method="post">
+
+                <input type="hidden" name="next-page" value="contacting-you">
+
+                <fieldset>
+                    <legend class="visuallyhidden">Country of nationality</legend>
+                    <div class="form-group">
+                        <p>Select all that apply</p>
+                        <label class="block-label" for="nationality-1">
+                            <input id="nationality-1" name="wnationality" type="checkbox" value=""> British (including English, Scottish, Welsh and Northern Irish)
+                        </label>
+                        <label class="block-label" for="nationality-2">
+                            <input id="nationality-2" name="wnationality" type="checkbox" value=""> Irish
+                        </label>
+                        <label class="block-label" for="nationality-3" data-target="another-country">
+                            <input id="nationality-3" name="wnationality" type="checkbox" value=""> National of a different country
+                        </label>
+                        <div class="panel panel-border-narrow js-hidden" id="another-country">
+                            <label class="form-label" for="contact-text-message">Country name</label>
+                            <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

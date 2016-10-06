@@ -1,0 +1,45 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Has your business registered online with the National Crime Agency? - Business activities - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Has your business registered online with the National Crime Agency?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form class="form" method="post">
+                <input type="hidden" name="next-page" value="risk-assessment">
+
+                <fieldset>
+                    <legend class="visuallyhidden">Has your business registered online with the National Crime Agency?</legend>
+                    <span class="form-hint">Before you can report suspicious activity on the National Crime Agency website, you must be registered on the website. You are not required by law to register.</span>
+
+                    <fieldset class="inline">
+                        <div class="form-group">
+                            <label class="block-label" for="radio-inline-3">
+                                <input id="radio-inline-3" type="radio" name="radio-inline-group2" value="Yes">Yes
+                            </label>
+                            <label class="block-label" for="radio-inline-4">
+                                <input id="radio-inline-4" type="radio" name="radio-inline-group2" value="No">No
+                            </label>
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

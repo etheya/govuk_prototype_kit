@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Does your business use the services of another Trust or Company Service Provider? - Trust and company service providers - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Does your business use the services of another Trust or Company Service Provider?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trust and company service providers</p>
+            </header>
+
+            <span class="form-hint">Only include companies which are based in the UK and supervised by HM Revenue and Customs for Money Laundering Regulations.</span>
+
+            <form method="post">
+                <input type="hidden" name="next-page" value="check-your-answers">
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">Does your business use the services of another Trust and Company Service Provider?</legend>
+
+                    <div class="form-group">
+                        <label class="block-label" for="yes" data-target="exisiting">
+                            <input id="yes" type="radio" name="activities" value="asp">Yes
+                        </label>
+                        <label class="block-label">
+                            <input id="no" type="radio" name="activities" value="eab">No
+                        </label>
+
+                        <div class="panel js-hidden" id="exisiting">
+                            <label class="form-label" for="mlr">What is that company&#8217;s Money Laundering Regulation reference number?
+                                <span class="form-hint">For example: 12345678</span>
+                            </label>
+                            <input class="form-control" name="mlr" type="text" id="mlr">
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

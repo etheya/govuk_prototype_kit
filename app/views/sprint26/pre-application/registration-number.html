@@ -1,0 +1,41 @@
+{{<layout}}
+
+{{$pageTitle}}
+  What&#8217;s your company registration number? - Pre-application - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What&#8217;s your company registration number?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Pre-application</p>
+            </header>
+
+            <form method="post">
+                <fieldset>
+
+                    <legend class="visuallyhidden">What&#8217;s your company registration number?</legend>
+
+                    <div class="form-group">
+                        <label class="form-label" for="reg_number">Company registration number
+                            <span class="form-hint">For example: 01234567</span>
+                        </label>
+                        <input class="form-control" id="reg_number" type="text" name="reg_number" value="">
+                    </div>
+
+                </fieldset>
+
+                <a href="activities" class="button" type="submit" id="save-and-continue">Save and continue</a>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

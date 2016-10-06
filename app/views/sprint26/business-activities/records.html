@@ -1,0 +1,66 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Do you keep records of all your transactions with customers? - Business activities - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Do you keep records of all your transactions with customers?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form class="form" method="post">
+                <input type="hidden" name="next-page" value="procedures">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">Do you keep records of all your transactions with customers?</legend>
+                    <div class="form-group">
+                        <label class="block-label" for="radio-inline-5" data-target="records">
+                            <input id="radio-inline-5" type="radio" name="radio-inline-group3" value="Yes">Yes
+                        </label>
+                        <label class="block-label" for="radio-inline-6">
+                            <input id="radio-inline-6" type="radio" name="radio-inline-group3" value="No">No
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="panel panel-border-narrow js-hidden" id="records">
+                    <fieldset>
+                        <legend class="form-label">How do you record transactions?</legend>
+                        <div class="form-group">
+                            <span class="form-hint">Select all that apply</span>
+                            <label class="block-label" for="radio-1">
+                                <input id="radio-1" type="checkbox" name="radio-group" value="Northern Ireland">On paper
+                            </label>
+                            <label class="block-label" for="radio-2">
+                                <input id="radio-2" type="checkbox" name="radio-group" value="Isle of Man or the Channel Islands">Digitally, on a spreadsheet
+                            </label>
+                            <label class="block-label" for="radio-3" data-target="comm">
+                                <input id="radio-3" type="checkbox" name="radio-group" value="I am a British citizen living abroad">Digitally, on a software package designed for recording transactions
+                            </label>
+                            <div class="js-hidden" id="comm">
+                                <div class="form-group">
+                                    <label class="form-label" for="software_package">Names of the software package</label>
+                                    <input class="form-control" name="software_package" type="text" id="software_package">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

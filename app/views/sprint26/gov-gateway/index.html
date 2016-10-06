@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+            <h1 class="heading-xlarge">Sign in with your Government Gateway account</h1>
+
+            <form method="post">
+                <input type="hidden" name="next-page" value="../business-structure">
+                <fieldset>
+                    <legend class="visuallyhidden">Sign in with your Government Gateway account</legend>
+                    <div class="form-group">
+                        <label class="form-label" for="userId">User ID</label>
+                        <input class="form-control" type="text" id="userId" name="userId"  />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="password">Password</label>
+                        <input class="form-control" type="password" id="password" name="password"  />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="button" value="Continue">
+                    </div>
+                </fieldset>
+            </form>
+
+            <p>You can <a href="signup">register for a Government Gateway account</a> if you don't have one.</p>
+
+            <h2 class="heading-medium">Problems signing in?</h2>
+            <details>
+                <summary><span class="summary">Lost user ID</span></summary>
+                <div class="panel panel-border-wide">
+                    <ul>
+                        <li>Limited companies: <a href="https://online.hmrc.gov.uk/user/credentials/userid?affinityGroup=organisation&service=corporation-tax">recover your user ID online or by post</a></li>
+                        <li>All other types of business: <a href="https://online.hmrc.gov.uk/user/credentials/userid?affinityGroup=individual&service=self-assessment">recover your user ID online or by post</a></li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary><span class="summary">Lost password ID</span></summary>
+                <div class="panel panel-border-wide">
+                    <ul>
+                        <li>Limited companies: <a href="https://online.hmrc.gov.uk/user/credentials/password?affinityGroup=organisation&service=corporation-tax">recover your user password online or by post</a></li>
+                        <li>All other types of business: <a href="https://online.hmrc.gov.uk/user/credentials/password?affinityGroup=individual&service=self-assessment">recover your user password online or by post</a></li>
+                    </ul>
+                </div>
+            </details>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

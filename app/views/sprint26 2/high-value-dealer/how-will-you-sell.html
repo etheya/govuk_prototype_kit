@@ -1,0 +1,49 @@
+{{<layout}}
+
+{{$pageTitle}}
+  How will you sell these goods? - High value dealer - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">How will you sell these goods?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>High value dealer</p>
+            </header>
+
+            <p>Select all that apply</p>
+
+            <form class="form" method="post">
+                <input type="hidden" name="next-page" value="cash-payments">
+
+                <fieldset>
+                    <legend class="visuallyhidden">How will you sell these goods?</legend>
+                    <div class="form-group">
+                        <label class="block-label">
+                            <input id="asp" type="checkbox" name="activities" value="asp">Auction
+                        </label>
+                        <label class="block-label">
+                            <input id="ct" type="checkbox" name="activities" value="bpsp">Retail
+                        </label>
+                        <label class="block-label">
+                            <input id="paye" type="checkbox" name="activities" value="eab">Wholesale
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

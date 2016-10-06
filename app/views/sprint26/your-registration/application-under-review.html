@@ -1,0 +1,79 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Application under review - Your registration - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <header class="page-header">
+                <h1 class="heading-xlarge">Application pending</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Your registration</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="grid-row spacelarge">
+        <div class="column-two-thirds">
+            <div class="panel panel-border-wide">
+                <p><span class="heading-small">Your business:</span>
+                    <br />Ubunchews Accountancy Services</span>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="column-one-third reg-step--submit">
+            <div class="grid-row statusblock declaration">
+                <h2 class="heading-small">Has something changed?</h2>
+                <ul>
+                    <li><a href="update-your-information">update your information</a></li>
+                    <!-- <li><a href="withdraw-application">withdraw your application</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid-row">
+        <div class="column-one-third">
+            <ol class="list list-number status-list">
+                <li class="status-list--complete">Completed <span class="status-list--icon"></span></li>
+                <li class="status-list--complete">Submitted <span class="status-list--icon"></span></li>
+                <!-- <li class="status-list--complete">Fee paid <span class="status-list--icon"></span></li> -->
+                <li class="status-list--pending status-list--end">Decision pending <span class="status-list--icon"></span></li>
+                <!-- <li class="status-list--upcoming">Decision made <span class="status-list--icon"></span></li> -->
+            </ol>
+        </div>
+        <div class="column-two-thirds status-text">
+            <!-- <h2 class="heading-medium">Under review</h2> -->
+            <p>If you have submitted the application and paid the fee, your application will be reviewed by HM Revenue and Customs (HMRC).</p>
+            <p>The review process can take up to 45 days. You'll get an email when the decision has been made. You'll need to sign in to this website to see the decision.</p>
+
+
+
+            <details>
+                <summary><span class="summary">If you haven't paid the fee</span></summary>
+                <p>Your application won’t be reviewed by HMRC until you have paid the fee.</p>
+                <div class="panel panel-border-wide">
+                    <dl class="fee-reference">
+                        <dt>Your registration fee</dt>
+                        <dd class="heading-large">&pound;200</dd>
+
+                        <dt>Your reference number</dt>
+                        <dd class="heading-large">XAAM00000123456</dd>
+                    </dl>
+                    <p>You must keep a record of the fee amount and reference number. You will need them to make the payment.</p>
+                </div>
+                <p class="spacelarge"><a href="../submit-application/payment" class="button">Pay registration fee</a></p>
+            </details>
+
+        </div>
+    </div>
+
+    {{>includes/templinks}}
+
+{{/main}}
+{{/layout}}

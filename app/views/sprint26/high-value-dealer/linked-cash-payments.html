@@ -1,0 +1,48 @@
+{{<layout}}
+
+{{$pageTitle}}
+  Are you able to automatically identify linked cash payments which come to €15,000 or more? - High value dealer - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Are you able to automatically identify linked cash payments which come to €15,000 or more?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>High value dealer</p>
+            </header>
+
+            <form method="post">
+
+                <input type="hidden" name="next-page" value="receiving">
+
+                <fieldset>
+                    <legend class="visuallyhidden">Are you able to automatically identify linked cash payments which come to €15,000 or more?ore?</legend>
+                    <div class="form-group">
+                        <fieldset class="inline">
+                            <span class="form-hint">If you do not use Euros, please convert to the currency you use.</span>
+                            <label class="block-label" for="radio-inline-2-3">
+                                <input id="radio-inline-2-3" type="radio" name="radio-inline-group-3" value="Yes">Yes
+                            </label>
+                            <label class="block-label" for="radio-inline-2-4">
+                                <input id="radio-inline-2-4" type="radio" name="radio-inline-group-3" value="No">No
+                            </label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

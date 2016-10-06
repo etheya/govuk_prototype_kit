@@ -7,54 +7,38 @@
 {% block content %}
 
 <main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-two-thirds">
+    <div class="grid-row">
+        <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+            <h1 class="heading-xlarge">{% include "includes/servicename.html" %}</h1>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+            <p>Your business needs to be monitored by a supervisory authority if Money Laundering Regulations apply to your business type.</p>
 
-      <h2 class="heading-medium">About this page</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th width="25%">Iteration</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+                    <tr>
+                        <td><a href="{{sprintname}}/">Sprint 26</a></td>
 
-			<h2 class="heading-medium">Examples and documentation</h2>
+                        <td><ul class="list list-bullet">
+                            <li>Variations work for the status pages</li>
+                            <li>Prototype re-jig to GOV.uk version 3.0</li>
+                            <li>Changes to reflect chaching of data</li>
+                            <li>Gov-gateway changes</li>
+                            </ul>
+                        </td>
 
-			<ul class="list list-bullet">
-				<li><a href="/examples">Example pages and patterns</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit/tree/master/docs">
-						Read the full documentation</a></li>
-			</ul>
+                    </tr>
 
-      <h2 class="heading-medium">Other resources</h2>
+                </tbody>
+            </table>
 
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
 
     </div>
   </div>

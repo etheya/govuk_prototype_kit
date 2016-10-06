@@ -1,0 +1,44 @@
+{{<layout}}
+
+{{$pageTitle}}
+  People in your business - Business activities - Anti-money laundering registration - GOV.UK
+{{/pageTitle}}
+
+{{$main}}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            {{>includes/back}}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">People in your business</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form class="form" method="post">
+                <input type="hidden" name="next-page" value="employment">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">People in your business</legend>
+
+                    <div class="form-group">
+                        <label for="people_number" class="form-label">Approximately how many people work in the business? Include directors.</label>
+                        <input id="people_number" class="form-control" type="number" >
+                    </div>
+                    <div class="form-group">
+                        <label for="people_mlr" class="form-label">Approximately how many people work on activities covered by Money Laundering Regulations?</label>
+                        <input id="people_mlr" class="form-control" type="number" >
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div>
+    </div>
+
+{{/main}}
+{{/layout}}

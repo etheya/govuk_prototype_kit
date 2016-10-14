@@ -14,9 +14,10 @@
 
            {% include "includes/back.html" %}
 
-				<h1 class="heading-xlarge"><span class="heading-secondary">Page by page breakdown</span>
-				Anti-Money laundering supervision prototype</h1>
-
+				<header class="page-header">
+                	<h1 class="heading-xlarge">Page by page breakdown</h1>
+                	<p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Anti-money laundering supervision</p>
+            	</header>
 
 				<h2 class="heading-medium">Gov.UK / Gov Gateway</h2>
 				<ul class="list-bullet">
@@ -35,13 +36,15 @@
 					<li><a href="confirm">Is this your business?</a></li>
 				</ul>
 
-
 				<h2 class="heading-medium">Pre-application</h2>
 				<ul class="list-bullet">
 					<li><a href="pre-application/structure">What's your business structure?</a></li>
 					<li><a href="pre-application/registration-number">What's your company registration number (Incorportated)</a></li>
 					<li><a href="pre-application/business-type">What's your type of business? (Unincorporated association or trust)</a></li>
 					<li><a href="pre-application/activities">What do you need to register? (Generates Progress Page)</a></li>
+					<li><a href="pre-application/services">Which services does your business provide? (MSB only)</a></li>
+					<li><a href="pre-application/psr-registration">Does your business have a Payment Services Regulations (PSR) registration number? (MSB only)</a></li>
+					<li><a href="pre-application/no-psr">You cannot continue with your application (MSB only)</a></li>
 					<li><a href="pre-application/check-your-answers">Check your answers</a></li>
 					<li><a href="pre-application/your-answers">Your answers</a></li>
 				</ul>
@@ -102,7 +105,6 @@
 					<li><a href="responsible-people/your-name">What's the name of this responsible person?</a></li>
 					<li><a href="responsible-people/residency">Is {{ personName }} a UK resident?</a></li>
 					<li><a href="responsible-people/nationality">What is the nationality of {{ personName }}?</a></li>
-					<!-- <li><a href="responsible-people/non-uk-resident">What type of passport does this person have? (Non UK resident)</a></li> -->
 					<li><a href="responsible-people/contacting-you">What are the contact details for {{ personName }}</a></li>
 					<li><a href="responsible-people/address">Where does {{ personName }} live?</a></li>
 					<li><a href="responsible-people/additional-address">Where was {{ personName }}'s' previous home address?</a></li>
@@ -124,6 +126,11 @@
 				<h2 class="heading-medium">Trading Premises</h2>
 				<ul class="list-bullet">
 					<li><a href="trading-premises/what-you-need">What you need</a></li>
+					<li><a href="trading-premises/who-uses">Are you registering an agent's premises?</a></li>
+					<li><a href="trading-premises/agent">What is your agent's business structure</a></li>
+					<li><a href="trading-premises/crn-number">Your agent's company details?</a></li>
+					<li><a href="trading-premises/dateofbirth">Your agent's details</a></li>
+					<li><a href="trading-premises/partners">Your agent's partnership</a></li>
 					<li><a href="trading-premises/premises">Trading premises details</a></li>
 					<li><a href="trading-premises/activities">What does your business do at these premises?</a></li>
 					<li><a href="trading-premises/premises-registered">Premises registered</a></li>
@@ -132,16 +139,7 @@
 					<li><a href="trading-premises/trading-premise-details">Detailed answers</a></li>
 					<li><a href="trading-premises/your-answers">Your answers</a></li>
 					<li><a href="trading-premises/remove">Remove trading premises</a></li>
-
-					<!-- <li><a href="trading-premises/agent">What is your agent's business structure</a></li>
-					<li><a href="trading-premises/crn-number">Your agent's company details</a></li>
-					<li><a href="trading-premises/dateofbirth">Your agent's details</a></li>
-					<li><a href="trading-premises/msb-activities">Which activities take place at these premises?</a></li>
-					<li><a href="trading-premises/msb-agent">Does your business use agents?</a></li>
-					<li><a href="trading-premises/partners">List all your agent's partners</a></li> -->
-
 				</ul>
-
 
 				<h2 class="heading-medium">Accountancy Service Provider</h2>
 				<ul class="list-bullet">
@@ -222,19 +220,15 @@
 				<h2 class="heading-medium">Your Registration</h2>
 				<ul class="list-bullet">
 					<li><a href="your-registration/application-progress">Application progress</a></li>
-
 					<li><a href="your-registration/application-incomplete">Application incomplete</a></li>
 					<li><a href="your-registration/application-not-submitted">Application not submitted</a></li>
 					<li><a href="your-registration/application-pending">Application pending</a></li>
 					<li><a href="your-registration/application-approved">Application approved</a></li>
 					<li><a href="your-registration/application-rejected">Application rejected</a></li>
 					<li><a href="your-registration/update-your-information">Update your information (amend/vary application)</a></li>
-
 					<li><a href="your-registration/application-variation">Application updates made</a></li>
 					<li><a href="your-registration/application-variation-cant-submit">Application updates made (cant-submit)</a></li>
 					<li><a href="your-registration/application-variation-pending">Application updates pending</a></li>
-
-
 					<li><a href="your-registration/withdraw-application">Withdraw application</a></li>
 					<li><a href="your-registration/withdrawn">Withdrawn</a></li>
 					<li><a href="your-registration/de-register-application">De-register</a></li>
@@ -255,7 +249,6 @@
 					<li><a href="update-information/confirmation">Amend confirmation</a></li>
 					<li><a href="update-information/confirmation-variation">Variation confirmation</a></li>
 					<li><a href="update-information/confirmation-nofee">Amend confirmation - No Fee</a></li>
-
 				</ul>
 
 				<h2 class="heading-medium">Payment</h2>
@@ -266,7 +259,6 @@
 				</ul>
 
 				<h2 class="heading-medium">Renewals</h2>
-
 				<h3 class="heading-small">Default questions for all</h3>
 				<ul class="list-bullet">
 					<li><a href="renewal/what-you-need">What you need?</a></li>

@@ -1,15 +1,20 @@
-{{<layout}}
 
-{{$pageTitle}}
-  Which currencies do you expect to supply the most to your customers? - Money service business - Anti-money laundering registration - GOV.UK
-{{/pageTitle}}
 
-{{$main}}
+{% extends "layout.html" %}
 
-<div class="grid-row">
-    <div class="column-two-thirds">
+{% block page_title %}
+    Which currencies did you supply the most to your customers in the last 12 months? - Money service business - Anti-money laundering registration - GOV.UK
+{% endblock %}
 
-        {{>includes/back}}
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
 
         <header class="page-header">
             <h1 class="heading-xlarge">Which currencies did you supply the most to your customers in the last 12 months?</h1>
@@ -79,8 +84,7 @@
 
         </form>
 
+        </div>
     </div>
-</div>
-
-{{/main}}
-{{/layout}}
+</main>
+{% endblock %}

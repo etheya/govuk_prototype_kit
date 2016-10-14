@@ -1,15 +1,20 @@
-{{<layout}}
 
-{{$pageTitle}}
-  How much throughput do you expect in the next 12 months? - Money service business - Anti-money laundering registration - GOV.UK
-{{/pageTitle}}
 
-{{$main}}
+{% extends "layout.html" %}
+
+{% block page_title %}
+  What was your total throughput in the last 12 months? - Money service business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
 
     <div class="grid-row">
         <div class="column-two-thirds">
 
-            {{>includes/back}}
+           {% include "includes/back.html" %}
 
             <header class="page-header">
                 <h1 class="heading-xlarge">What was your total throughput in the last 12 months?</h1>
@@ -54,8 +59,6 @@
             </form>
 
         </div>
-
     </div>
-
-{{/main}}
-{{/layout}}
+</main>
+{% endblock %}

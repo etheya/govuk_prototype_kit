@@ -209,12 +209,3 @@ utils.findAvailablePort(app, function (port) {
 })
 
 
-
-// Add variables that are available in all views
-app.get( '/home.html', function( req, res ) {
-    var data = {
-        firstName: 'Andy',
-        lastName: 'Neale'
-    } ;
-    return res.render( '../index.html', data ) ;
-} ) ;

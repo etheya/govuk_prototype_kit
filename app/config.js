@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'Register for Anti-money laundering supervision',
+  serviceName: 'Anti-money laundering supervision',
 
   // Default port that prototype runs on
   port: '3000',
@@ -24,7 +24,8 @@ module.exports = {
 
   sprintName: 'Sprint 27',
   sprintLink: '/sprint27',
-  personName: 'brian coult'
+  personName: 'Brian Coult',
+  businessType: 'Trust or Company services'
 
 }
 

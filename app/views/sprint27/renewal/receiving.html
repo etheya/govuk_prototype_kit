@@ -1,16 +1,20 @@
-{{<layout}}
 
-{{$pageTitle}}
-  Do you expect to receive cash payments over €15,000 from customers you've not met in person? - High value dealer - Anti-money laundering registration - GOV.UK
-{{/pageTitle}}
 
-{{$main}}
+{% extends "layout.html" %}
+
+{% block page_title %}
+    In the last 12 months did you receive cash payments over €15,000 from customers you've not met in person? - High value dealer - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
 
     <div class="grid-row">
-
         <div class="column-two-thirds">
 
-            {{>includes/back}}
+           {% include "includes/back.html" %}
 
             <header class="page-header">
                 <h1 class="heading-xlarge">In the last 12 months did you receive cash payments over €15,000 from customers you've not met in person?</h1>
@@ -62,6 +66,5 @@
 
         </div>
     </div>
-
-{{/main}}
-{{/layout}}
+</main>
+{% endblock %}

@@ -1,15 +1,20 @@
-{{<layout}}
 
-{{$pageTitle}}
-  Which services does your business provide? - Money service business - Anti-money laundering registration - GOV.UK
-{{/pageTitle}}
 
-{{$main}}
+{% extends "layout.html" %}
 
-<div class="grid-row">
-    <div class="column-two-thirds">
+{% block page_title %}
+   Which services does your business provide? - Money service business - Anti-money laundering registration - GOV.UK
+{% endblock %}
 
-        {{>includes/back}}
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
 
         <header class="page-header">
             <h1 class="heading-xlarge">Which services does your business provide?</h1>
@@ -46,8 +51,7 @@
 
         </form>
 
+        </div>
     </div>
-</div>
-
-{{/main}}
-{{/layout}}
+</main>
+{% endblock %}

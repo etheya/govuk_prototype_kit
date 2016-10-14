@@ -7,6 +7,7 @@ router.use(function (req, res, next) {
   res.locals.sprintName = config.sprintName
   res.locals.sprintLink = config.sprintLink
   res.locals.personName = config.personName
+  res.locals.businessType = config.businessType
   next()
 })
 

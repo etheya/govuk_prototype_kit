@@ -1,20 +1,20 @@
-{{<layout}}
 
-{{$pageTitle}}
+
+{% extends "layout.html" %}
+
+{% block page_title %}
   Check your answers - Money service business - Anti-money laundering registration - GOV.UK
-{{/pageTitle}}
+{% endblock %}
 
-{{$main}}
+{% block content %}
 
-
-{{>includes/service-header}}
-
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
 
     <div class="grid-row">
-
         <div class="column-two-thirds">
 
-            {{>includes/back}}
+           {% include "includes/back.html" %}
 
             <header class="page-header">
                 <h1 class="heading-xlarge">Check your answers</h1>
@@ -144,8 +144,6 @@
             <p><a href="#">Print this page</a></p>
 
         </div>
-
     </div>
-
-{{/main}}
-{{/layout}}
+</main>
+{% endblock %}

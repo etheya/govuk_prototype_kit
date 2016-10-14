@@ -1,0 +1,51 @@
+
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Premises registered - Trading premises - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Premises registered</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trading premises</p>
+            </header>
+
+            <div class="panel panel-border-wide spacelarge">
+                <p>You have registered 1 trading premises.</p>
+            </div>
+
+            <form method="post">
+
+                <fieldset class="inline">
+                    <legend class="form-label">Do you want to register another trading premises?</legend>
+                    <div class="form-group">
+                        <label class="block-label" data-target="sortcode" for="radio-indent-1">
+                            <input id="radio-indent-1" type="radio" name="next-page" value="premises">Yes
+                        </label>
+                        <label class="block-label" data-target="iban" for="radio-indent-2">
+                            <input id="radio-indent-2" type="radio" name="next-page" value="check-your-answers">No
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

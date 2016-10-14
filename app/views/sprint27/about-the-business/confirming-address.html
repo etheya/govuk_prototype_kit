@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Is this your registered office? - About the business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Is this your registered office?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+            </header>
+
+            <div class="panel panel-border-wide">
+                {% include "includes/business-address.html" %}
+            </div>
+
+            <form method="post">
+                <fieldset class="inline">
+
+                    <legend class="visuallyhidden">Is this your registered office or main place of business?</legend>
+                    <div class="form-group">
+                        <label class="block-label" for="radio-inline-2-1">
+                            <input id="radio-inline-2-1" type="radio" name="next-page" value="contacting-you">Yes
+                        </label>
+                        <label class="block-label" for="radio-inline-2-3">
+                            <input id="radio-inline-2-3" type="radio" name="next-page" value="new-registered-office">No
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

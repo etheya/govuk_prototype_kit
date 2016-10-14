@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    What you need - Trust and company service providers - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What you need</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trust or Company Service Provider</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="grid-row what-you-need">
+
+        <div class="column-one-third">
+            {% include "includes/save-message.html" %}
+        </div>
+
+        <div class="column-two-thirds">
+
+            <p class="heading-small">For this section you may need to know:</p>
+            <ul class="list list-bullet">
+                <li>if you only sell off-the-shelf companies</li>
+                <li>if you create complex corporate structures for clients, or plan to do so in the future</li>
+                <li>the Money Laundering Regulation reference number of the Trust or Company Service Provider you use</li>
+            </ul>
+
+            <p class="heading-small">You'll also need to know:</p>
+            <ul class="list list-bullet">
+                <li>what kind of Trust or Company Service Provider you are</li>
+                <li>which services your business provides</li>
+                <li>whether or not you use the services of another Trust or Company Service Provider</li>
+            </ul>
+
+            <a href="service-type" class="button" role "button">Continue</a>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

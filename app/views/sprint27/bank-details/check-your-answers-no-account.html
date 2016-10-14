@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+Check your answers - Bank details - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Check your answers</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Bank details</p>
+            </header>
+
+            <div class="panel panel-border-wide spacelarge">
+                <p>You currently have no bank accounts registered</p>
+                <p><a href="accounts">Add a bank account</a></p>
+            </div>
+
+			<form method="post">
+				<div class="form-group">
+					<input type="submit" class="button" value="Accept and complete section">
+				</div>
+			</form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

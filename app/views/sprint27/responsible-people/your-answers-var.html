@@ -1,0 +1,64 @@
+
+  People you have registered - Responsible people - Anti-money laundering registration - GOV.UK
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Is this your business? - Business matching - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">People you have registered</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Responsible people</p>
+            </header>
+
+            <div class="panel panel-border-wide spacelarge">
+                <p><a href="your-name">Add a responsible person</a></p>
+            </div>
+
+            <ul class="list check-your-answers--amend">
+
+                <li class="group">
+                    <span class="column-two-thirds"><span class="visuallyhidden">You have registered </span>Brian Coult</span>
+                    <footer class="column-one-third check-your-answers__footer">
+                        <a href="person-details">Edit<span class="visuallyhidden"> the responsible person Brian Coult</span></a> or <a href="remove">Remove<span class="visuallyhidden"> Brian Coult from your responsible people</span></a>
+                    </footer>
+                </li>
+
+                <li class="group">
+                    <span class="column-two-thirds"><span class="visuallyhidden">You have registered </span>Milly Shaw</span>
+                    <footer class="column-one-third check-your-answers__footer">
+                        <a href="person-details">Edit<span class="visuallyhidden"> the responsible person Milly Shaw</span></a> or <a href="remove">Remove<span class="visuallyhidden"> Milly Shaw from your responsible people</span></a>
+                    </footer>
+                </li>
+
+                <li class="group">
+                    <span class="column-two-thirds"><span class="visuallyhidden">You have registered </span>Michael Wolfendale</span>
+                    <footer class="column-one-third check-your-answers__footer">
+                        <a href="person-details">Edit<span class="visuallyhidden"> the responsible person Michael Wolfendale</span></a> or <a href="remove">Remove<span class="visuallyhidden"> Michael Wolfendale from your responsible people</span></a>
+                    </footer>
+                </li>
+
+            </ul>
+
+            <form method="post">
+                <div class="form-group">
+                    <input type="submit" class="button" value="Confirm and continue">
+                </div>
+            </form>
+
+            <p><a href="remove">Print this page</a></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

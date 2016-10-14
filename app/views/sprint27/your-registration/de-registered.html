@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  De-registered - Your registration - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+            <header class="page-header">
+                <h1 class="heading-xlarge">De-registered</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Your registration</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="grid-row spacelarge">
+        <div class="column-two-thirds">
+            <div class="panel panel-border-wide">
+                <p><span class="heading-small">Your business:</span>
+                    <br />Ubunchews Accountancy Services</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-two-thirds status-text">
+            <p>You de-registered this business on: XXDATEXX</p>
+
+            <p>This business is no longer registered for anti-money laundering supervision with HM Revenue and Customs.</p>
+            <p>You must start a new application if you want to be registered again.</p>
+
+            <div class="form-group">
+                <a href="../pre-application/confirm-am" class="button" type="submit">Start new application</a>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

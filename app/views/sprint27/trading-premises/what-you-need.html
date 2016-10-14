@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+What you need - Trading premises - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What you need</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trading premises</p>
+            </header>
+
+        </div>
+    </div>
+    <div class="grid-row what-you-need">
+
+        <div class="column-one-third">
+            {% include "includes/save-message.html" %}
+        </div>
+
+        <div class="column-two-thirds">
+
+            <p class="heading-small">For each of your trading premises, you&#8217;ll need to know:</p>
+
+            <ul class="list list-bullet">
+                <li>the trading name and address</li>
+                <li>the date you&#8217;ll start trading from these premises</li>
+                <li>if it&#8217;s also a residential address</li>
+                <li>what the business does from these premises</li>
+            </ul>
+
+            <a href="premises" class="button" role="button">Continue</a>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,5 +1,15 @@
 var express = require('express')
 var router = express.Router()
+var config = require('./config.js')
+
+
+router.use(function (req, res, next) {
+  res.locals.sprintName = config.sprintName
+  res.locals.sprintLink = config.sprintLink
+  res.locals.personName = config.personName
+  next()
+})
+
 
 router.get('/', function (req, res) {
   res.render('index')

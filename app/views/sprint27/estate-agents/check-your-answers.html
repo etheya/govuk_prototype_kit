@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+   Check your answers - Estate agents - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Check your answers</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Estate Agency Business</p>
+            </header>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Which services does your business provide?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>Residential Estate Agency</p>
+                <footer class="group">
+                    <p><a href="#" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Which services does your business provide?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Is this business registered with a redress scheme?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>The Property Ombudsman Limited</p>
+                <footer class="group">
+                    <p><a href="#" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Is this business registered with a redress scheme?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Has the business, or anyone in the business, ever been penalised under the Estate Agents Act 1979?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>My business received a penalty in 2003 because of reasons X, Y, Z.</p>
+                <footer class="group">
+                    <p><a href="#" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Has the business, or anyone in the business, ever been penalised under the Estate Agents Act 1979?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Has the business, or anyone in the business, ever been penalised by a professional body?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>No</p>
+                <footer class="group">
+                    <p><a href="#" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Has the business, or anyone in the business, ever been penalised by a professional body?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <form method="post">
+                <div class="form-group">
+                    <input type="submit" class="button" value="Accept and complete section">
+                </div>
+            </form>
+
+            <p><a href="#">Print this page</a></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

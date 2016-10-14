@@ -1,0 +1,46 @@
+
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Who must register as a responsible person? - Responsible people - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">You must register:</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Responsible people</p>
+            </header>
+
+        </div>
+    </div>
+
+    <div class="grid-row what-you-need">
+
+        <div class="column-one-third">
+            {% include "includes/save-message.html" %}
+        </div>
+
+        <div class="column-two-thirds">
+
+            <ul class="list list-bullet">
+                <li>everyone who directs the business, including sole proprietors, partners, directors and shadow directors</li>
+                <li>any person who owns or controls more than 25% of the business</li>
+                <li>the ‘nominated officer’, who is the person who acts as the money laundering reporting officer</li>
+            </ul>
+
+            <p><a href="what-you-need" class="button" role="button">Continue</a></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

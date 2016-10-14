@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'Service name goes here',
+  serviceName: 'Register for Anti-money laundering supervision',
 
   // Default port that prototype runs on
   port: '3000',
@@ -16,6 +16,13 @@ module.exports = {
   useHttps: 'true',
 
   // Cookie warning - update link to service's cookie page.
-  cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="#" title="Find out more about cookies">Find out more about cookies</a>'
+  cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="#" title="Find out more about cookies">Find out more about cookies</a>',
+
+
+  sprintName: 'Sprint 27',
+  sprintLink: '/sprint27',
+  personName: 'brian coult'
 
 }
+
+

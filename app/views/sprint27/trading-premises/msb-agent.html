@@ -1,0 +1,49 @@
+
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Does your business use agents? - Trading premises - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_beta.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           {% include "includes/back.html" %}
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Does your business use agents?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trading premises</p>
+            </header>
+
+            <form class="form" method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="visuallyhidden">Does your business use agents?</label>
+                        <p>An agent is an individual or business that works on behalf of your business, to provide your services. An employee is not an agent.</p>
+                        <fieldset class="inline">
+                            <label class="block-label" for="radio-inline-2-3">
+                                <input id="radio-inline-2-3" type="radio" name="next-page" value="who-uses">Yes
+                            </label>
+                            <label class="block-label" for="radio-inline-2-4">
+                                <input id="radio-inline-2-4" type="radio" name="next-page" value="premises">No
+                            </label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

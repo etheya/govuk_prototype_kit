@@ -23,7 +23,6 @@ module.exports = router
 
 
 // Business matching branching
-
 router.get('/sprint27/business-structure', function (req, res) {
     var structure = req.query.structure;
     if (structure === 'bd') {
@@ -39,6 +38,32 @@ router.get('/sprint27/business-structure', function (req, res) {
     }
 
 })
+
+// Pre application structure
+router.get('/sprint27/pre-application/structure', function (req, res) {
+    var structure = req.query.structure;
+    if (structure === 'regno') {
+        res.redirect('/sprint27/pre-application/registration-number');
+    } else if (structure === 'activities') {
+        res.redirect('/sprint27/pre-application/activities');
+    } else if (structure === 'type'){
+        res.redirect('/sprint27/pre-application/business-type');
+    } else {
+        res.render('sprint27/pre-application/structure')
+    }
+
+})
+
+// Activites
+// router.get('/sprint27/pre-application/activities', function (req, res) {
+//     var activities = req.query.activities;
+//     if (activities === '0') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else {
+//         res.render('sprint27/pre-application/check-your-answers')
+//     }
+
+// })
 
 
 

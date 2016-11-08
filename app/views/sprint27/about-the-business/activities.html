@@ -20,42 +20,38 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="vat">
+            <form action="vat" method="get" class="form">
 
                 <fieldset class="inline">
                     <legend class="visuallyhidden">When will your business start activities that need to be registered for anti-money laundering supervision?</legend>
 
-                    <div class="form-group">
-                        <div class="form-date">
-                            <label class="form-label-bold"></label>
-                            <p>If your business is already involved in these activities, give the date it started.</p>
-                            <p class="form-hint">For example, 31 3 2017</p>
-
+                    <div class="form-group" >
+                        <div class="form-date" >
+                            <p>If your business is already involved in these activities, give the date it started.
+                                <span class="form-hint">For example, 31 3 2017</span>
+                            </p>
                             <div class="form-group form-group-day">
                                 <label for="dob-day">Day</label>
                                 <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
                             </div>
-
                             <div class="form-group form-group-month">
                                 <label for="dob-month">Month</label>
                                 <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
                             </div>
-
                             <div class="form-group form-group-year">
                                 <label for="dob-year">Year</label>
-                                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="2014" max="2016">
                             </div>
                         </div>
-
                     </div>
+
                 </fieldset>
 
                 <input type="submit" class="button" value="Save and continue">
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

@@ -24,16 +24,17 @@
                 {% include "includes/business-address.html" %}
             </div>
 
-            <form method="post">
+            <form action="contacting-you" method="get" class="form">
                 <fieldset class="inline">
 
                     <legend class="visuallyhidden">Is this your registered office or main place of business?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-2-1">
-                            <input id="radio-inline-2-1" type="radio" name="next-page" value="contacting-you">Yes
+                            <input id="radio-inline-2-1" type="radio" name="registered" value="yes">Yes
                         </label>
                         <label class="block-label" for="radio-inline-2-3">
-                            <input id="radio-inline-2-3" type="radio" name="next-page" value="new-registered-office">No
+                            <input id="radio-inline-2-3" type="radio" name="registered" value="false">No
                         </label>
                     </div>
 
@@ -43,7 +44,7 @@
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

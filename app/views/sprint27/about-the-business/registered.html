@@ -20,36 +20,34 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
             </header>
 
-            <form class="form" method="post">
+            <form action="vat" method="get" class="form">
 
                 <fieldset class="inline">
-
                     <legend class="visuallyhidden">Is your business currently registered for anti-money laundering supervision?</legend>
                     <span class="form-hint">This only refers to registration with HMRC.</span>
 
                     <div class="form-group">
                         <label class="block-label" for="yes" data-target="exisiting">
-                            <input id="yes" type="radio" name="next-page" value="vat">Yes
+                            <input id="yes" type="radio" name="registered" value="true">Yes
                         </label>
                         <label class="block-label">
-                            <input id="no" type="radio" name="next-page" value="activities">No
+                            <input id="no" type="radio" name="registered" value="false">No
                         </label>
-
                         <div class="panel panel-border-narrow js-hidden" id="exisiting">
                             <label class="form-label" for="mlr">Money Laundering Regulations registration number
                                 <span class="form-hint">For example: 12345678</span>
                             </label>
                             <input class="form-control" name="mlr" type="text" id="mlr">
                         </div>
-
                     </div>
+
                 </fieldset>
 
                 <input type="submit" class="button" value="Save and continue">
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

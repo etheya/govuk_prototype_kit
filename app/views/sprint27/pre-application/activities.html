@@ -20,7 +20,7 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Pre-application</p>
             </header>
 
-            <form class="form" method="post">
+            <form action="activities" class="form" method="post">
                 <fieldset>
                     <legend class="visuallyhidden"> Which activities do you need to register for?</legend>
                     <p">Select all that apply</p>
@@ -32,27 +32,27 @@
                         </label>
 
                         <label class="block-label" for="bps">
-                            <input id="bps" type="checkbox" name="activities" value="">Bill payment services
+                            <input id="bps" type="checkbox" name="activities" value="1">Bill payment services
                         </label>
 
                         <label class="block-label" for="eab">
-                            <input id="eab" type="checkbox" name="activities" value="1">Estate agent business
+                            <input id="eab" type="checkbox" name="activities" value="2">Estate agent business
                         </label>
 
                         <label class="block-label" for="hvd">
-                            <input id="hvd" type="checkbox" name="activities" value="2">High value dealing
+                            <input id="hvd" type="checkbox" name="activities" value="3">High value dealing
                         </label>
 
                         <label class="block-label" for="msb">
-                            <input id="msb" type="checkbox" name="activities" value="3">Money service business
+                            <input id="msb" type="checkbox" name="activities" value="4">Money service business
                         </label>
 
                         <label class="block-label" for="tcsp">
-                            <input id="tcsp" type="checkbox" name="activities" value="4">Trust or company services
+                            <input id="tcsp" type="checkbox" name="activities" value="5">Trust or company services
                         </label>
 
                         <label class="block-label" for="tdit">
-                            <input id="tdit" type="checkbox" name="activities" value="">Telephone, digital and IT payment services
+                            <input id="tdit" type="checkbox" name="activities" value="6">Telephone, digital and IT payment services
                         </label>
                     </div>
                 </fieldset>
@@ -70,8 +70,8 @@
                     </details>
                 </div>
 
-
-                <input type="submit" class="button" value="Save and continue">
+                <a href="check-your-answers"  class="button">Save and continue</a>
+                <!-- <input type="submit" class="button" value="Save and continue"> -->
 
             </form>
 

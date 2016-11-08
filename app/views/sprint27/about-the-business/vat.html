@@ -20,9 +20,7 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
             </header>
 
-            <form method="post">
-                <input type="hidden" name="next-page" value="corporation-tax">
-
+            <form class="form">
                 <fieldset class="inline">
 
                     <legend class="visuallyhidden">Is your business registered for VAT?</legend>
@@ -34,7 +32,6 @@
                         <label class="block-label" for="radio-inline-2-2">
                             <input id="radio-inline-2-2" type="radio" name="radio-inline-group-2" value="No">No
                         </label>
-
                         <div class="panel panel-border-narrow js-hidden" id="vat">
                             <label class="form-label" for="vat_number">VAT registration number
                                 <span class="form-hint">For example: 123456789</span>
@@ -45,11 +42,11 @@
 
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="corporation-tax" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

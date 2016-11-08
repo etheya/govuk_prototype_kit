@@ -22,9 +22,8 @@
 
             <p>We&#8217;ll email you when there&#8217;s an update about your application for anti-money laundering supervision.</p>
 
-            <form method="post">
+           <form action="check-your-answers" method="get" class="form">
                 <fieldset>
-
                     <legend class="visuallyhidden">Contacting your business</legend>
 
                     <div class="form-group">
@@ -43,24 +42,25 @@
                      {% include "includes/business-address.html" %}
                 </div>
 
-
                 <fieldset class="inline">
                     <legend class="form-label">Is this the right address to send you letters?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-2-1">
-                            <input id="radio-inline-2-1" type="radio" name="next-page" value="check-your-answers"> Yes
+                            <input id="radio-inline-2-1" type="radio" name="address" value="yes"> Yes
                         </label>
                         <label class="block-label" for="radio-inline-2-2">
-                            <input id="radio-inline-2-2" type="radio" name="next-page" value="address-for-letters"> No
+                            <input id="radio-inline-2-2" type="radio" name="address" value="false"> No
                         </label>
                     </div>
+
                 </fieldset>
 
                 <input type="submit" class="button" value="Save and continue">
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

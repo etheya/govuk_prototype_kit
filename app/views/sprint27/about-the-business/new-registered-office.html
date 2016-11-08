@@ -21,10 +21,9 @@
             </header>
 
             <form method="post">
-                <input type="hidden" name="next-page" value="contacting-you">
-
-        		<fieldset class="inline">
+                <fieldset class="inline">
                     <legend class="form-label">Is this a UK address?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-2-1" >
         				    <input id="radio-inline-2-1" type="radio"  name="ukorover" value="false" checked="checked" >Yes
@@ -33,6 +32,7 @@
                             <input id="radio-inline-2-2" type="radio" name="ukorover" value="true">No
                         </label>
                     </div>
+
         		</fieldset>
 
                 <fieldset>
@@ -69,12 +69,12 @@
                 	</div>
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="contacting-you" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}
 

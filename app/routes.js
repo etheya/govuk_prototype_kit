@@ -54,14 +54,26 @@ router.get('/sprint27/pre-application/structure', function (req, res) {
 
 })
 
-// Activites
 // router.get('/sprint27/pre-application/activities', function (req, res) {
 //     var activities = req.query.activities;
 //     if (activities === '0') {
 //         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '1') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '2') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '3') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '4') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '5') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
+//     } else if (activities === '6') {
+//         res.redirect('/sprint27/pre-application/check-your-answers');
 //     } else {
-//         res.render('sprint27/pre-application/check-your-answers')
+//         res.render('/sprint27/pre-application/check-your-answers')
 //     }
+
 
 // })
 
@@ -74,3 +86,34 @@ router.get('/sprint27/pre-application/structure', function (req, res) {
 //         next();
 //       }
 //     });
+
+
+// About the business
+router.get('/sprint27/about-the-business/vat', function (req, res) {
+    var registered = req.query.registered;
+    if (registered === 'false') {
+        res.redirect('/sprint27/about-the-business/activities');
+    } else {
+        res.render('sprint27/about-the-business/vat')
+    }
+})
+
+router.get('/sprint27/about-the-business/contacting-you', function (req, res) {
+    var registered = req.query.registered;
+    if (registered === 'false') {
+        res.redirect('/sprint27/about-the-business/new-registered-office');
+    } else {
+        res.render('sprint27/about-the-business/contacting-you')
+    }
+})
+
+router.get('/sprint27/about-the-business/check-your-answers', function (req, res) {
+    var address = req.query.address;
+    if (address === 'false') {
+        res.redirect('/sprint27/about-the-business/address-for-letters');
+    } else {
+        res.render('sprint27/about-the-business/check-your-answers')
+    }
+})
+
+

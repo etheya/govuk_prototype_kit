@@ -14,8 +14,6 @@
 
            {% include "includes/back.html" %}
 
-
-            <!-- Milly to look at page title -->
             <header class="page-header">
                 <h1 class="heading-xlarge">What&#8217;s your postal address?</h1>
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
@@ -25,11 +23,10 @@
                 <p>We&#8217;ll send letters relating to anti-money laundering supervision to this address.</p>
             </div>
 
-            <form method="post">
-                <input type="hidden" name="next-page" value="check-your-answers" />
-
-                <fieldset>
+            <form class="form">
+                <fieldset >
                     <legend class="visuallyhidden">Contact person or business</legend>
+
                     <div class="form-group">
                         <label class="form-label" for="your_name">Your name</label>
                         <input type="text" class="form-control" id="your_name">
@@ -38,21 +35,25 @@
                         <label class="form-label" for="business_name">Name of the business</label>
                         <input type="text" class="form-control" id="business_name">
                     </div>
+
                 </fieldset>
 
-                <fieldset class="inline">
+                <fieldset class="inline" >
                     <legend class="form-label">Is this a UK address?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-2-1">
-                            <input id="radio-inline-2-1" type="radio" name="ukorover" value="false" checked="checked">Yes
+                            <input id="radio-inline-2-1" type="radio" name="ukorover" value="" checked="checked">Yes
                         </label>
                         <label class="block-label" for="radio-inline-2-2">
-                            <input id="radio-inline-2-2" type="radio" name="ukorover" value="true">No
+                            <input id="radio-inline-2-2" type="radio" name="ukorover" value="">No
                         </label>
                     </div>
+
                 </fieldset>
 
                 <fieldset>
+                    <legend class="visuallyhidden">Your address details</legend>
                     <div class="form-group">
                         <label for="company-address1" class="form-label">Address</label>
                         <input type="text" class="form-control" id="company-address1">
@@ -85,12 +86,13 @@
                     </div>
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="check-your-answers" class="button">Save and continue</a>
+                <!-- <input type="submit" class="button" value="Save and continue"> -->
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}
 

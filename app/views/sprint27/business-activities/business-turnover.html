@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -21,8 +19,7 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="turnover">
+            <form class="form" role="form">
 
                 <fieldset>
                     <legend class="visuallyhidden">How much total net profit does your business expect in the next 12 months?</legend>
@@ -50,13 +47,15 @@
                         </label>
                     </div>
 
-                    <input type="submit" class="button" value="Save and continue">
+                    <a href="turnover" class="button">Save and continue</a>
+
+                    <!-- <input type="submit" class="button" value="Save and continue"> -->
 
                 </fieldset>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -21,11 +19,12 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="procedures">
+            <form class="form" role="form">
 
                 <fieldset class="inline">
+
                     <legend class="visuallyhidden">Do you keep records of all your transactions with customers?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-5" data-target="records">
                             <input id="radio-inline-5" type="radio" name="radio-inline-group3" value="Yes">Yes
@@ -34,11 +33,14 @@
                             <input id="radio-inline-6" type="radio" name="radio-inline-group3" value="No">No
                         </label>
                     </div>
+
                 </fieldset>
 
                 <div class="panel panel-border-narrow js-hidden" id="records">
                     <fieldset>
+
                         <legend class="form-label">How do you record transactions?</legend>
+
                         <div class="form-group">
                             <span class="form-hint">Select all that apply</span>
                             <label class="block-label" for="radio-1">
@@ -57,14 +59,15 @@
                                 </div>
                             </div>
                         </div>
+
                     </fieldset>
                 </div>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="procedures" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

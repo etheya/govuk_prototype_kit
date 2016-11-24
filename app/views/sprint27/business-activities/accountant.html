@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -21,27 +19,29 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
+            <form action="accountant-details" method="get" class="form" role="form">
 
                 <fieldset class="inline">
                     <legend class="visuallyhidden"> Does your business use an accountant for matters relating to money laundering regulations??</legend>
                     <span class="form-hint">This only applies to guidance from a professional adviser who is not part of your business, such as an accountant.</span>
+
                     <div class="form-group">
                         <label class="block-label" for="yes">
-                            <input id="yes" type="radio" name="next-page" value="accountant-details">Yes
+                            <input id="yes" type="radio" name="accountant" value="yes">Yes
                         </label>
                         <label class="block-label" >
-                            <input id="no" type="radio" name="next-page" value="check-your-answers">No
+                            <input id="no" type="radio" name="accountant" value="false">No
                         </label>
                     </div>
+
                 </fieldset>
-                <div class="form-group">
-                    <input type="submit" class="button" value="Save and continue">
-                </div>
+
+                <input type="submit" class="button" value="Save and continue">
+
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

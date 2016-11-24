@@ -1,8 +1,7 @@
-
 {% extends "layout.html" %}
 
 {% block page_title %}
-Do you have customers who live or work outside of the UK? - Business activities - Anti-money laundering registration - GOV.UK
+    Do you have customers who live or work outside of the UK? - Business activities - Anti-money laundering registration - GOV.UK
 {% endblock %}
 
 {% block content %}
@@ -20,11 +19,9 @@ Do you have customers who live or work outside of the UK? - Business activities 
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="records">
+            <form class="form" role="form">
 
                 <fieldset class="inline">
-
                     <legend class="visuallyhidden">Do you have customers who live or work outside of the UK?</legend>
 
                     <div class="form-group">
@@ -51,16 +48,18 @@ Do you have customers who live or work outside of the UK? - Business activities 
 
                         </div>
                     </div>
+
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="records" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}
+
 
 <script>
 var numAdd = 1;

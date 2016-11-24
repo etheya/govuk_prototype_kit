@@ -116,4 +116,22 @@ router.get('/sprint27/about-the-business/check-your-answers', function (req, res
     }
 })
 
+// Business activities
+router.get('/sprint27/business-activities/business-turnover', function (req, res) {
+    var turnover = req.query.turnover;
+    if (turnover === 'false') {
+        res.redirect('/sprint27/business-activities/turnover');
+    } else {
+        res.render('sprint27/business-activities/business-turnover')
+    }
+})
 
+
+router.get('/sprint27/business-activities/accountant-details', function (req, res) {
+    var accountant = req.query.accountant;
+    if (accountant === 'false') {
+        res.redirect('/sprint27/business-activities/check-your-answers');
+    } else {
+        res.render('sprint27/business-activities/accountant-details')
+    }
+})

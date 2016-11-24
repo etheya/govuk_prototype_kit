@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -21,11 +19,12 @@
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="crime-agency">
+            <form class="form" role="form">
 
                 <fieldset class="inline">
+
                     <legend class="visuallyhidden">Does your business have written guidance for staff on how to identify and report suspicious activity?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-inline-1">
                             <input id="radio-inline-1" type="radio" name="radio-inline-group1" value="Yes">Yes
@@ -34,12 +33,14 @@
                             <input id="radio-inline-2" type="radio" name="radio-inline-group1" value="No">No
                         </label>
                     </div>
+
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="crime-agency" class="button">Save and continue</a>
+
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

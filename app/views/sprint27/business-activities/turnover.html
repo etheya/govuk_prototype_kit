@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-Net profit from relevant activities - Business activities - Anti-money laundering registration - GOV.UK
+    Net profit from relevant activities - Business activities - Anti-money laundering registration - GOV.UK
 {% endblock %}
 
 {% block content %}
@@ -14,7 +14,6 @@ Net profit from relevant activities - Business activities - Anti-money launderin
 
            {% include "includes/back.html" %}
 
-
             <header class="page-header">
                 <h1 class="heading-xlarge">How much total net profit does your business expect in the next 12 months, from the following activities?</h1>
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
@@ -26,10 +25,11 @@ Net profit from relevant activities - Business activities - Anti-money launderin
                 </ul>
             </div>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="franchise">
+            <form class="form" role="form">
                 <fieldset>
+
                     <legend class="visuallyhidden"> How much net profit do you expect in the next 12 months, from activities related to anti-money laundering supervision?</legend>
+
                     <div class="form-group">
                         <label class="block-label" for="radio-1">
                             <input id="radio-1" type="radio" name="radio-group">&pound;0 to &pound;14,999
@@ -53,13 +53,14 @@ Net profit from relevant activities - Business activities - Anti-money launderin
                             <input id="radio-6" type="radio" name="radio-group">More than &pound;10 million
                         </label>
                     </div>
+
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <a href="franchise" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

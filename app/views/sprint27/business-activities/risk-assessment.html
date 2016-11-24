@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -16,48 +14,50 @@
 
            {% include "includes/back.html" %}
 
-
             <header class="page-header">
                 <h1 class="heading-xlarge">Does your business have a documented risk assessment policy and procedure?</h1>
                 <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
             </header>
 
-            <form class="form" method="post">
-                <input type="hidden" name="next-page" value="accountant">
-
+            <form class="form" role="form">
                 <div class="form-group">
+
                     <fieldset class="inline">
+
                         <legend class="visuallyhidden">Does your business have a documented risk assessment policy and procedure?</legend>
+
                         <label class="block-label" for="radio-inline-5" data-target="records">
                             <input id="radio-inline-5" type="radio" name="radio-inline-group3" value="Yes">Yes
                         </label>
                         <label class="block-label" for="radio-inline-6">
                             <input id="radio-inline-6" type="radio" name="radio-inline-group3" value="No">No
                         </label>
+
                     </fieldset>
 
                     <div class="panel panel-border-narrow js-hidden" id="records">
-                        <div class="form-group">
 
-                                <legend class="form-label">Is it paper-based or digital?</legend>
-                                <span class="form-hint">Select all that apply</span>
-                                <label class="block-label" for="manual">
-                                    <input id="manual" type="checkbox" name="radio-group" value="Northern Ireland">Paper-based
-                                </label>
-                                <label class="block-label" for="electronic">
-                                    <input id="electronic" type="checkbox" name="radio-group" value="Isle of Man or the Channel Islands">Digital
-                                </label>
+                        <div class="form-group">
+                            <legend class="form-label">Is it paper-based or digital?</legend>
+
+                            <span class="form-hint">Select all that apply</span>
+                            <label class="block-label" for="manual">
+                                <input id="manual" type="checkbox" name="radio-group" value="Northern Ireland">Paper-based
+                            </label>
+                            <label class="block-label" for="electronic">
+                                <input id="electronic" type="checkbox" name="radio-group" value="Isle of Man or the Channel Islands">Digital
+                            </label>
+
                         </div>
                     </div>
+
                 </div>
 
-                <div class="form-group">
-                    <input type="submit" class="button" value="Save and continue">
-                </div>
+                <a href="accountant" class="button">Save and continue</a>
 
             </form>
 
-        </div>
-    </div>
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
 </main>
 {% endblock %}

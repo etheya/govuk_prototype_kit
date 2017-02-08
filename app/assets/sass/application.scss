@@ -42,13 +42,19 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+
+
+// Not working with the latest prototype
+// *,
+// *:before,
+// *:after {
+//   -moz-box-sizing: inherit;
+//   -webkit-box-sizing: inherit;
+//   box-sizing: inherit;
+// }
+
+
+
 
 // sanity for small screens
 .phase-tag-beta {

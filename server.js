@@ -102,7 +102,6 @@ app.use(function (req, res, next) {
 })
 
 // Add variables that are available in all views
-
 app.use(function (req, res, next) {
   res.locals.serviceName = config.serviceName
   res.locals.cookieText = config.cookieText
@@ -207,3 +206,5 @@ utils.findAvailablePort(app, function (port) {
     })
   }
 })
+
+module.exports = app

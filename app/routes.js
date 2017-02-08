@@ -22,6 +22,16 @@ router.get('/', function (req, res) {
 module.exports = router
 
 
+ router.get('*', function (req, res, next) {
+    if (req.query['next-page']) {
+        res.redirect(req.query['next-page']);
+    } else {
+        next();
+    }
+});
+
+
+
 // Business matching branching
 router.get('/sprint27/business-structure', function (req, res) {
     var structure = req.query.structure;

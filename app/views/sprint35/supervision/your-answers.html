@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Your answers - Supervision - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Your answers</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Supervision</p>
+            </header>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Has your business ever been registered with another supervising body?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <ul class="check-your-answers--list">
+                    <li>Supervision Agency</li>
+                    <li>Start date: 31st March 2008</li>
+                    <li>End date: 31st March 2010</li>
+                    <li>The supervision ended because of X, Y, Z reasons.</li>
+                </ul>
+                <footer class="group">
+                    <p><a href="supervised" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Has your business ever been registered with another supervising body?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Is your business a member of a professional body?</h2>
+                <p><span class="visuallyhidden">Answer: </span>Association of Accounting Technicians</p>
+                <footer class="group">
+                    <p><a href="professional-body" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Is your business a member of a professional body?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Has the business, or anyone in the business, ever been penalised by a professional body?</h2>
+                <p><span class="visuallyhidden">Answer: </span>The business was penalised because of X, Y, Z reasons.</p>
+                <footer class="group">
+                    <p><a href="penalised" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Has the business, or anyone in the business, ever been penalised by a professional body?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <form method="post">
+                <div class="form-group">
+                    <input type="submit" class="button" value="Confirm and continue">
+                </div>
+            </form>
+
+            <p><a href="#">Print this page</a></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

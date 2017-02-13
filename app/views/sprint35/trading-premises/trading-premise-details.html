@@ -1,0 +1,77 @@
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block page_title %}
+  Detailed answers - Trading premises - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Detailed answers</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Trading premises</p>
+            </header>
+
+            <h2 class="heading-large">ACME Limited</h2>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Address</h2>
+                <p><span class="visuallyhidden">Answer: </span>This Street, Town, County, AB1 2DE</p>
+                <footer class="group">
+                    <p><a href="premises" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Address&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Trading start date</h2>
+                <p><span class="visuallyhidden">Answer: </span>31 March 2010</p>
+                <footer class="group">
+                    <p><a href="premises" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Trading start date&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Residential address</h2>
+                <p><span class="visuallyhidden">Answer: </span>No</p>
+                <footer class="group">
+                    <p><a href="premises" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Residential address&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Who uses these premises?</h2>
+                <p><span class="visuallyhidden">Answer: </span>My Business</p>
+                <footer class="group">
+                    <p><a href="premises" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Who uses these premises?&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Services at this address</h2>
+                <p><span class="visuallyhidden">Answer: </span>{% include "includes/business-type.html" %}</p>
+                <footer class="group">
+                    <p><a href="activities" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Services at this address&#8221;</span></a></p>
+                </footer>
+            </section>
+
+            <div class="form-group">
+                <a href="check-your-answers" class="button" type="submit">Confirm and continue</a>
+
+            </div>
+
+            <p><a href="#">Print this page</a></p>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

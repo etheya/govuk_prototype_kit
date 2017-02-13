@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Satisfaction survey - Give feedback - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Satisfaction survey</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>Give feedback</p>
+            </header>
+
+
+            <form method="post" autocomplete="off">
+                <fieldset>
+                    <legend class="heading-medium">Overall, how did you feel about using the service?</legend>
+
+                     <div class="form-group">
+                        <label for="lc" class="block-label">
+                            <input type="radio" name="next-page" id="lc" value="business-details"> Very satisifed
+                        </label>
+                        <label for="sole" class="block-label">
+                            <input type="radio" name="next-page" id="sole" value="business-details-st"> Satisfied
+                        </label>
+                        <label for="partner" class="block-label">
+                            <input type="radio" name="next-page" id="partner" value="business-details-partner"> Neither satisfied or dissatisfied
+                        </label>
+                        <label for="lp" class="block-label">
+                            <input type="radio" name="next-page" id="lp" value="business-details-limited-partner"> Dissatisfied
+                        </label>
+                        <label for="other" class="block-label">
+                            <input type="radio" name="next-page" id="other" value="business-details"> Very dissatisfied
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="heading-medium">How could we improve this service?</legend>
+                    <div class="form-group">
+                        <label class="form-label" for="details">Please don't include any personal or financial information.</label>
+                        <textarea class="form-control" cols="200" rows="5" id="details"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <a href="confirm" class="button" role="button" id="save-and-continue">Send feedback</a>
+
+            </form>
+
+
+        </div>
+    </div>
+</main>
+{% endblock %}

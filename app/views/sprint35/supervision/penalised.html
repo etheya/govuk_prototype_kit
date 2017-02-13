@@ -1,0 +1,66 @@
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block page_title %}
+  Has the business, or anyone in the business, ever been penalised by a professional body? - Supervision - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Has the business, or anyone in the business, ever been penalised by a professional body?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Supervision</p>
+            </header>
+
+            <p>Examples of a penalty include:</p>
+            <ul class="list list-bullet">
+                <li>a fine</li>
+                <li>a warning</li>
+                <li>suspension</li>
+                <li>expulsion</li>
+            </ul>
+            <p>Only include penalties for business activities covered by Money Laundering Regulations.</p>
+            <form method="post">
+                <input type="hidden" name="next-page" value="check-your-answers">
+
+                <fieldset>
+
+                    <div class="form-group">
+                        <fieldset class="inline">
+                            <legend class="visuallyhidden">Has the business, or anyone in the business, ever been penalised by a professional body?</legend>
+
+                            <label class="block-label" for="yes-2" data-target="pbody">
+                                <input id="yes-2" type="radio" name="penalised" value="Yes">Yes
+                            </label>
+                            <label class="block-label" for="no-2">
+                                <input id="no-2" type="radio" name="penalised" value="No">No
+                            </label>
+
+                            <div class="panel panel-border-narrow js-hidden" id="pbody">
+                                <label class="form-label" for="details">Please provide details</label>
+                                <textarea name="details" cols="100" rows="5" class="form-control" id="details"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="button" type="submit" value="Save and continue">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

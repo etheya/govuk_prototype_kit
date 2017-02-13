@@ -22,8 +22,8 @@ module.exports = {
 
   cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="#">Find out more about cookies</a>',
 
-  sprintName: 'Sprint 27',
-  sprintLink: '/sprint27',
+  sprintName: 'Sprint 35',
+  sprintLink: '/sprint35',
   personName: 'Brian Coult',
   businessType: 'Trust or Company services'
 }

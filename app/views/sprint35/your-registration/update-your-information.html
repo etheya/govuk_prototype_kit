@@ -1,0 +1,62 @@
+{{<layout}}
+
+{{$pageTitle}}
+    Update your information - Your application - Anti-money laundering registration - GOV.UK
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Is this your business? - Business matching - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}oas
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+            <header class="page-header">
+                <h1 class="heading-xlarge">Update your information</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Your registration</p>
+            </header>
+            <p>If something has changed in your business that&#8217;s relevant to Money Laundering Regulations you must update your information.
+            <p>There will be an additional fee to pay if you increase the number of responsible people or trading premises.</p>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <ul class="grid-layout column-two-thirds progress-steps progress-steps__amend">
+            {{#sections}}
+            <li>
+                <a href="{{editlink}}" class="progress-step {{#status}}progress-step__complete{{/status}}" aria-label="{{name}}. {{message}} You can view and amend your information.">
+                    <div class="grid-layout column-two-thirds progress-step--details">
+                        <h2 class="heading-small">{{name}}</h2>
+                        <p>{{message}}</p>
+                    </div>
+                    <div class="grid-layout column-one-third progress-step--status {{#status}}progress-step__complete{{/status}}">
+                        <div class="column-two-thirds progress-step--status-time">
+                            <p class="font-xsmall">View and
+                                <br />amend your
+                                <br />information</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {{/sections}}
+        </ul>
+        <div class="column-one-third reg-step--submit">
+            <div class="grid-row statusblock declaration">
+                <h2 class="heading-small">Submit updates</h2>
+                <p>You don't need to submit until you've made all the updates required.</p>
+                <div class="form-group">
+                    <a href="../update-information/who-is-registering" class="button" type="submit">Submit updates</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/main}}
+
+{{/layout}}

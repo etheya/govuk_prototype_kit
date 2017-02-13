@@ -1,0 +1,66 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Your contact details - About the business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Your contact details</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+            </header>
+
+            <p>We&#8217;ll email you when there&#8217;s an update about your application for anti-money laundering supervision.</p>
+
+           <form action="check-your-answers" method="get" class="form">
+                <fieldset>
+                    <legend class="visuallyhidden">Contacting your business</legend>
+
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone number</label>
+                        <input class="form-control" type="text" id="phone" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email address</label>
+                        <input class="form-control" type="email" id="email" />
+                    </div>
+
+                </fieldset>
+
+                <div class="panel panel-border-wide">
+                     {% include "includes/business-address.html" %}
+                </div>
+
+                <fieldset class="inline">
+                    <legend class="form-label">Is this the right address to send you letters?</legend>
+
+                    <div class="form-group">
+                        <label class="block-label" for="radio-inline-2-1">
+                            <input id="radio-inline-2-1" type="radio" name="address" value="yes"> Yes
+                        </label>
+                        <label class="block-label" for="radio-inline-2-2">
+                            <input id="radio-inline-2-2" type="radio" name="address" value="false"> No
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

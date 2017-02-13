@@ -1,0 +1,91 @@
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block page_title %}
+  Which currencies do you expect to supply the most to your customers? - Money service business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+        <header class="page-header">
+            <h1 class="heading-xlarge">Which currencies do you expect to supply the most to your customers?</h1>
+            <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Money service business</p>
+        </header>
+
+        <form class="form" method="post">
+            <input type="hidden" name="next-page" value="check-your-answers">
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="visuallyhidden">Which currencies do you expect to supply the most to your customers?</legend>
+
+                    <label>List up to 3 currencies
+                        <span class="form-hint">For example: USD, EUR, CNY</span>
+                    </label>
+
+                    <div class="form-group">
+                        <label for="country1" class="form-label visuallyhidden">Currency 1</label>
+                        <input type="text" class="form-control" id="country1">
+                    </div>
+                    <div class="form-group">
+                        <label for="country1" class="form-label visuallyhidden">Currency 2</label>
+                        <input type="text" class="form-control" id="country1">
+                    </div>
+                    <div class="form-group">
+                        <label for="country1" class="form-label visuallyhidden">Currency 3</label>
+                        <input type="text" class="form-control" id="country1">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">Who supplied your foreign currency?</legend>
+                    <span class="form-hint">Select all that apply</span>
+
+                    <label class="block-label" data-target="bank">
+                        <input type="checkbox" name="services" value="bank">Banks
+                    </label>
+
+                    <div class="panel panel-border-narrow js-hidden" id="bank">
+                        <label class="form-label" for="specify">Which banks?</label>
+                        <input class="form-control" id="first-name-2" type="text">
+                    </div>
+
+                    <label class="block-label" data-target="whole">
+                        <input type="checkbox" name="services" value="whole">Currency wholesalers
+                    </label>
+
+                    <div class="panel panel-border-narrow js-hidden" id="whole">
+                        <label class="form-label" for="specify">Which currency wholesalers?</label>
+                        <input class="form-control" id="first-name-2" type="text">
+                    </div>
+
+                    <label class="block-label">
+                        <input type="checkbox" name="services" value="resale">Customers selling their foreign currency
+                    </label>
+
+                </fieldset>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="button" value="Save and continue">
+            </div>
+
+        </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

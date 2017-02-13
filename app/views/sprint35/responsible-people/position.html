@@ -1,0 +1,94 @@
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block page_title %}
+  What&#8217;s this person&#8217;s position within the business? - Responsible people - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What&#8217;s {% include "includes/person.html" %}&#8217;s position within the business?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Responsible people</p>
+            </header>
+
+            <!-- <div class="notice spacelarge">
+                <i class="icon icon-important"><span class="visuallyhidden">Warning</span></i>
+                <strong class="bold-small">The business must have a nominated officer. Only one person can register as the nominated officer.</strong>
+            </div> -->
+
+            <form class="form" method="post">
+
+                <fieldset>
+                    <div class="form-group spacelarge">
+                        <legend class="visuallyhidden">What&#8217;s your position within the business?</legend>
+                        <p>Select all that apply</p>
+                        <label class="block-label" for="radio-1">
+                            <input id="radio-1" type="checkbox" name="next-page" value="nominated-officer">Beneficial owner (holding more than 25% of shares)
+                        </label>
+                        <label class="block-label" for="radio-2">
+                            <input id="radio-2" type="checkbox" name="next-page" value="nominated-officer">Director
+                        </label>
+                        <label class="block-label" for="radio-5">
+                            <input id="radio-5" type="checkbox" name="next-page" value="self-assessment">Nominated officer
+                        </label>
+                        <label class="block-label" for="radio-6">
+                            <input id="radio-6" type="checkbox" name="next-page" value="nominated-officer">Partner
+                        </label>
+                        <label class="block-label" for="radio-7">
+                            <input id="radio-7" type="checkbox" name="next-page" value="nominated-officer">Sole proprietor
+                        </label>
+                        <!-- <label class="block-label" for="radio-8" data-target="other">
+                            <input id="radio-8" type="checkbox" name="next-page" value="nominated-officer">Other
+                        </label> -->
+                        <!-- <div class="panel panel-border-narrow js-hidden" id="other" >
+                            <div class="form-group">
+                                <label class="form-label" for="first-name-2">Please specify</label>
+                                <input class="form-control" id="first-name-2" type="text">
+                            </div>
+                        </div> -->
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="form-label">When did this position start? If there is more than one position, give the date of the earliest.
+                        <span class="form-hint" id="dob-hint">For example, 31 3 1980</span>
+                    </legend>
+                    <div class="form-group">
+                        <div class="form-date">
+                            <div class="form-group form-group-day">
+                                <label for="dob-day">Day</label>
+                                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+                            </div>
+                            <div class="form-group form-group-month">
+                                <label for="dob-month">Month</label>
+                                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                            </div>
+                            <div class="form-group form-group-year">
+                                <label for="dob-year">Year</label>
+                                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

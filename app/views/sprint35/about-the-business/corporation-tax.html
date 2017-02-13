@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Is your business registered for Corporation Tax? - About the business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Is your business registered for Corporation Tax?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+            </header>
+
+            <form class="form">
+                <fieldset class="inline">
+
+                    <legend class="visuallyhidden">Is your business registered for Corporation Tax?</legend>
+
+                    <div class="form-group">
+                        <label class="block-label" for="radio-inline-2-1" data-target="vat">
+                            <input id="radio-inline-2-1" type="radio" name="radio-inline-group-2" value="Yes">Yes
+                        </label>
+                        <label class="block-label" for="radio-inline-2-2">
+                            <input id="radio-inline-2-2" type="radio" name="radio-inline-group-2" value="No">No
+                        </label>
+                        <div class="panel panel-border-narrow js-hidden" id="vat">
+                            <label class="form-label" for="corp_number">Corporation Tax reference number
+                                <span class="form-hint">For example: 1234567890</span>
+                            </label>
+                            <input class="form-control" name="corp_number" type="text" id="corp_number">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <a href="confirming-address" class="button">Save and continue</a>
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

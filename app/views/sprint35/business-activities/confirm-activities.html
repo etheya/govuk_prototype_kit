@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Other activities - Business activities - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Is your business involved in any other activities?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form action="business-turnover" method="get" class="form" role="form">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">Other activities</legend>
+
+                    <p>For example: you would select 'yes' if your business is a newsagents shop that sends money overseas. Your shop will be classed as a Money Service Business. The other activities are the newsagents part of the business.</p>
+
+                    <div class="form-group">
+                        <label class="block-label" for="yes" data-target="no-activity">
+                            <input id="yes" type="radio" name="turnover" value="yes">Yes
+                        </label>
+                        <label class="block-label" >
+                            <input id="no" type="radio" name="turnover" value="false">No
+                        </label>
+                        <div class="panel panel-border-narrow js-hidden" id="no-activity">
+                            <div class="form-group">
+                                <label class="form-label" for="details">Please give details</label>
+                                <textarea class="form-control" cols="200" rows="5" id="details"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

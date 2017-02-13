@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Is your business currently registered for anti-money laundering supervision? - About the business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Is your business currently registered for anti-money laundering supervision?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+            </header>
+
+            <form action="vat" method="get" class="form">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">Is your business currently registered for anti-money laundering supervision?</legend>
+                    <span class="form-hint">This only refers to registration with HMRC.</span>
+
+                    <div class="form-group">
+                        <label class="block-label" for="yes" data-target="exisiting">
+                            <input id="yes" type="radio" name="registered" value="true">Yes
+                        </label>
+                        <label class="block-label">
+                            <input id="no" type="radio" name="registered" value="false">No
+                        </label>
+                        <div class="panel panel-border-narrow js-hidden" id="exisiting">
+                            <label class="form-label" for="mlr">Money Laundering Regulations registration number
+                                <span class="form-hint">For example: 12345678</span>
+                            </label>
+                            <input class="form-control" name="mlr" type="text" id="mlr">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

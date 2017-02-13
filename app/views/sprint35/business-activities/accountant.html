@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Does your business receive advice on Money Laundering Regulations and due diligence? - Business activities - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Does your business receive advice on Money Laundering Regulations and due diligence?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form action="accountant-details" method="get" class="form" role="form">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden"> Does your business use an accountant for matters relating to money laundering regulations??</legend>
+                    <span class="form-hint">This only applies to guidance from a professional adviser who is not part of your business, such as an accountant.</span>
+
+                    <div class="form-group">
+                        <label class="block-label" for="yes">
+                            <input id="yes" type="radio" name="accountant" value="yes">Yes
+                        </label>
+                        <label class="block-label" >
+                            <input id="no" type="radio" name="accountant" value="false">No
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <input type="submit" class="button" value="Save and continue">
+
+
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

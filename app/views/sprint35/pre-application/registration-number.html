@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    What&#8217;s your company registration number? - Pre-application - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What&#8217;s your company registration number?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>Pre-application</p>
+            </header>
+
+            <form method="get" autocomplete="off">
+                <fieldset>
+
+                    <legend class="visuallyhidden">What&#8217;s your company registration number?</legend>
+
+                    <div class="form-group">
+                        <label class="form-label" for="reg_number">Company registration number
+                            <span class="form-hint">It&#8217;s 8 characters and can be just numbers, or a mix of numbers and capital letters. If yours is 7 characters, enter a 0 (zero) at the beginning.</span>
+                        </label>
+                        <input class="form-control" id="reg_number" type="text" name="reg_number" pattern="[0-9]{8}" title="It&#8217;s 8 characters and can be just numbers, or a mix of numbers and letters. If yours is 7 characters, enter a 0 (zero) at the beginning." required="required" aria-required="true" value="" />
+                    </div>
+
+                </fieldset>
+
+                <input type="hidden" name="next-page" value="activities">
+                <button type="submit" class="button">Save and continue</button>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

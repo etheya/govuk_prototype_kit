@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+   You can&#8217;t continue with your application - Pre-application - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <h1 class="heading-xlarge">
+                <span class="heading-secondary">Pre-application</span>
+                You can&#8217;t continue with your application
+            </h1>
+
+            <p>Your business must have a Payment Services Regulations (PSR) reference number in order to apply for anti-money laundering supervision from HM Revenue and Customs.</p>
+            <p>You can apply for a PSR reference number from the Financial Conduct Authority (FCA).</p>
+
+            <form class="form" method="post">
+                <input type="hidden" name="next-page" value="check-your-answers">
+                <div class="form-group">
+                    <input type="submit" class="button" value="Log out">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

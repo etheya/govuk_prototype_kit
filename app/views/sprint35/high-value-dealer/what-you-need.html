@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    What you need - High value dealer - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">What you need</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>High value dealer</p>
+            </header>
+
+        </div>
+
+    </div>
+
+    <div class="grid-row what-you-need">
+
+        <div class="column-one-third">
+            {% include "includes/save-message.html" %}
+        </div>
+
+        <div class="column-two-thirds">
+
+            <p class="heading-small">For this section you’ll need to know:</p>
+
+            <ul class="list list-bullet">
+                <li>what your business will sell</li>
+                <li>how you’ll sell goods</li>
+                <li>if you will be buying or selling duty-suspended excise goods</li>
+                <li>if your business has already accepted cash payments of €15,000 or more</li>
+                <li>if you are able to automatically identify linked cash payments of €15,000 or more</li>
+                <li>if you expect to receive cash payments of €15,000 from customers you’ve not met in person</li>
+                <li>how much of your turnover you expect to come from cash payments over €15,000</li>
+            </ul>
+
+            <a href="selling" class="button" role="button">Continue</a>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

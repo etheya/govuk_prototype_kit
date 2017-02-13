@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Does this professional advisor also manage your tax affairs with HM Revenue and Customs (HMRC)? - Business activities - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">Does this professional advisor also manage your tax affairs with HM Revenue and Customs (HMRC)?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>Business activities</p>
+            </header>
+
+            <form method="post" role="form">
+
+                <fieldset class="inline">
+                    <legend class="visuallyhidden">Does this professional advisor also manage your tax affairs with HM Revenue and Customs (HMRC)?</legend>
+
+                    <div class="form-group">
+                        <label class="block-label" for="yes" data-target="no-activity">
+                            <input id="yes" type="radio" name="radio-1" value="Yes">Yes
+                        </label>
+                        <label class="block-label">
+                            <input id="no" type="radio" name="radio-1" value="No">No
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <a href="check-your-answers" class="button">Save and continue</a>
+
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

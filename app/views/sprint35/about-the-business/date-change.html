@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}
+  When did the change happen? - About the business - Anti-money laundering registration - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_research.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+           <!-- {% include "includes/back.html" %} -->
+
+            <header class="page-header">
+                <h1 class="heading-xlarge">When did the change happen?</h1>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>About the business</p>
+            </header>
+
+<!--             <div class="panel panel-border-wide spacelarge">
+                <p>This will permanently remove [trading premises name] from your list of trading premises.</p>
+            </div>
+ -->
+            <form class="form" method="post">
+
+                <input type="hidden" name="next-page" value="your-answers">
+
+                <fieldset>
+                    <legend class="visuallyhidden">When did the change happen?
+                    </legend>
+                    <div class="form-group">
+                        <p class="form-hint" id="dob-hint">For example, 31 03 1980</p>
+                        <div class="form-date">
+                            {{>includes/date-field}}
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" class="button" value="Save and continue">
+                </div>
+            </form>
+
+        </div><!-- /of main column -->
+    </div><!-- / of grid-row -->
+</main>
+{% endblock %}

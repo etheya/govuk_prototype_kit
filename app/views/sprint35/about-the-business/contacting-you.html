@@ -17,46 +17,54 @@
 
             <header class="page-header">
                 <h1 class="heading-xlarge">Your contact details</h1>
-                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>About the business</p>
             </header>
 
             <p>We&#8217;ll email you when there&#8217;s an update about your application for anti-money laundering supervision.</p>
 
-           <form action="check-your-answers" method="get" class="form">
+            <form method="get" autocomplete="off">
+
                 <fieldset>
+
                     <legend class="visuallyhidden">Contacting your business</legend>
 
                     <div class="form-group">
-                        <label class="form-label" for="phone">Phone number</label>
-                        <input class="form-control" type="text" id="phone" />
-                    </div>
-
-                    <div class="form-group">
                         <label class="form-label" for="email">Email address</label>
-                        <input class="form-control" type="email" id="email" />
+                        <span class="form-hint">For example, myname@example.com.</span>
+                        <input class="form-control" type="email" id="email" pattern="*@-.-" required="required" aria-required="true" />
                     </div>
-
-                </fieldset>
-
-                <div class="panel panel-border-wide">
-                     {% include "includes/business-address.html" %}
-                </div>
-
-                <fieldset class="inline">
-                    <legend class="form-label">Is this the right address to send you letters?</legend>
 
                     <div class="form-group">
-                        <label class="block-label" for="radio-inline-2-1">
-                            <input id="radio-inline-2-1" type="radio" name="address" value="yes"> Yes
-                        </label>
-                        <label class="block-label" for="radio-inline-2-2">
-                            <input id="radio-inline-2-2" type="radio" name="address" value="false"> No
-                        </label>
+                        <label class="form-label" for="phone">Phone number</label>
+                        <span class="form-hint">You can only use numbers, spaces, brackets, plus (+) and dash (-).</span>
+                        <input class="form-control" type="text" id="phone" pattern="[0-9()+\\- ]+" required="required" aria-required="true" />
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                        <details class="details">
+                            <summary class="summary">I need to tell you more about how to contact me</summary>
+
+                            <div class="details panel panel-border-narrow">
+                                <fieldset>
+                                    <legend class="visuallyhidden">Select the option that applies to you</legend>
+                                    <div class="form-group">
+                                        <label class="block-label" for="contact-me-1">
+                                            <input id="contact-me-1" type="radio" name="contact-me" value="text-only" /> Text only (no voice calls)
+                                        </label>
+                                        <label class="block-label" for="contact-me-2">
+                                            <input id="contact-me-2" type="radio" name="contact-me" value="voice-only" /> Voice only (no text)
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </details>
                     </div>
 
                 </fieldset>
 
-                <input type="submit" class="button" value="Save and continue">
+                <input type="hidden" name="next-page" value="letters" />
+                <input type="submit" class="button" value="Save and continue" />
 
             </form>
 

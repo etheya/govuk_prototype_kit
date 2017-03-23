@@ -17,69 +17,79 @@ Your answers - About the business - Anti-money laundering registration - GOV.UK
 
             <header class="page-header">
                 <h1 class="heading-xlarge">Your answers</h1>
-                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>About the business</p>
             </header>
 
             <section class="check-your-answers">
-                <h2 class="heading-small">Money Laundering Regulations registration number</h2>
-                <p><span class="visuallyhidden">Answer: </span>8765 4321</p>
+                <h2 class="heading-small">Is your business currently registered for anti-money laundering supervision?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>Money laundering regulations number: 45628975</p>
                 <footer class="group">
-                    <p><a href="registered" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Money Laundering Regulations registration number&#8221;</span></a></p>
+                    <p><a href="registered" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Is your business currently registered for anti-money laundering supervision?&#8221;</span></a></p>
                 </footer>
             </section>
 
-            <section class="check-your-answers">
-                <h2 class="heading-small">VAT registration number</h2>
-                <p><span class="visuallyhidden">Answer: </span>2468 1357 90</p>
+            <!-- Only needed if not currently registered -->
+            <!-- <section class="check-your-answers">
+                <h2 class="heading-small">When will your business start activities that need to be registered for anti-money laundering supervision?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>22 June 2016</p>
                 <footer class="group">
-                    <p><a href="vat" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;VAT registration number&#8221;</span></a></p>
+                    <p><a href="registered" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;When will your business start activities that need to be registered for anti-money laundering supervision?&#8221;</span></a></p>
+                </footer>
+            </section> -->
+
+            <section class="check-your-answers">
+                <h2 class="heading-small">Is your business registered for VAT in the UK?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>VAT registration number: 2468 1357 90</p>
+                <footer class="group">
+                    <p><a href="vat" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Is your business registered for VAT in the UK?&#8221;</span></a></p>
                 </footer>
             </section>
 
-            <section class="check-your-answers">
-                <h2 class="heading-small">Corporation Tax number</h2>
-                <p><span class="visuallyhidden">Answer: </span>UTR: 2468 1357 90</p>
+            <!-- We should already know this information -->
+            <!-- <section class="check-your-answers">
+                <h2 class="heading-small">Is your business registered for Corporation Tax?</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <p>Yes</p>
                 <footer class="group">
-                    <p><a href="corporation-tax" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Corporation Tax number&#8221;</span></a></p>
+                    <p><a href="corporation-tax" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Is your business registered for Corporation Tax?&#8221;</span></a></p>
                 </footer>
-            </section>
+            </section> -->
 
             <section class="check-your-answers">
                 <h2 class="heading-small">Registered office</h2>
-                <p><span class="visuallyhidden">Answer: </span>{% include "includes/business-address.html" %}</p>
+                <span class="visuallyhidden">Answer: </span>
+                <p>{% include "includes/business-address-nonlist.html" %}</p>
                 <footer class="group">
                     <p><a href="confirming-address" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Registered office&#8221;</span></a></p>
                 </footer>
             </section>
 
             <section class="check-your-answers">
-                <h2 class="heading-small">Phone number</h2>
-                <p><span class="visuallyhidden">Answer: </span>0191 234 5678</p>
+                <h2 class="heading-small">Contact details</h2>
+                <span class="visuallyhidden">Answer: </span>
+                <ul class="list">
+                    <li>Email address: {% include "includes/emailaddress.html" %}</li>
+                    <li>Phone number: {% include "includes/telnumber.html" %}</li>
+                </ul>
                 <footer class="group">
-                    <p><a href="contacting-you" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Phone number&#8221;</span></a></p>
+                    <p><a href="contacting-you" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Contact details&#8221;</span></a></p>
                 </footer>
             </section>
 
-            <section class="check-your-answers">
-                <h2 class="heading-small">Email address</h2>
-                <p><span class="visuallyhidden">Answer: </span>info@acme.com</p>
-                <footer class="group">
-                    <p><a href="contacting-you" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Email address&#8221;</span></a></p>
-                </footer>
-            </section>
-
-            <section class="check-your-answers">
+            <section class="check-your-answers check-your-answers__last">
                 <h2 class="heading-small">Postal address</h2>
-                <p><span class="visuallyhidden">Answer: </span>{% include "includes/business-address.html" %}</p>
+                <span class="visuallyhidden">Answer: </span>
+                <p>{% include "includes/business-address-nonlist.html" %}</p>
                 <footer class="group">
-                    <p><a href="contacting-you" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Postal address&#8221;</span></a></p>
+                    <p><a href="letters" class="edit">Edit<span class="visuallyhidden"> your answer for &#8220;Postal address&#8221;</span></a></p>
                 </footer>
             </section>
 
-            <form method="post">
-                <div class="form-group">
-                    <input type="submit" class="button" value="Confirm and continue">
-                </div>
+            <form method="post" autocomplete="off">
+                <input type="submit" class="button" value="Accept and complete section">
             </form>
 
             <p><a href="#">Print this page</a></p>

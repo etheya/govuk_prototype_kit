@@ -17,30 +17,32 @@
 
             <header class="page-header">
                 <h1 class="heading-xlarge">Is your business currently registered for anti-money laundering supervision?</h1>
-                <p class="heading-secondary"><span class="visuallyhidden">This section is: </span>About the business</p>
+                <p class="heading-secondary"><span class="visuallyhidden">This section is </span>About the business</p>
             </header>
 
-            <form action="vat" method="get" class="form">
+            <form class="form" method="get">
 
                 <fieldset class="inline">
+
                     <legend class="visuallyhidden">Is your business currently registered for anti-money laundering supervision?</legend>
-                    <span class="form-hint">This only refers to registration with HMRC.</span>
+                    <span class="form-hint" id="reg-hint">This only refers to registration with HMRC.</span>
 
                     <div class="form-group">
                         <label class="block-label" for="yes" data-target="exisiting">
-                            <input id="yes" type="radio" name="registered" value="true">Yes
+                            <input id="yes" type="radio" name="next-page" value="vat" aria-describedby="reg-hint" required="required" aria-required="true" />Yes
                         </label>
                         <label class="block-label">
-                            <input id="no" type="radio" name="registered" value="false">No
+                            <input id="no" type="radio" name="next-page" value="activities" required="required" aria-required="true" />No
                         </label>
+
                         <div class="panel panel-border-narrow js-hidden" id="exisiting">
                             <label class="form-label" for="mlr">Money Laundering Regulations registration number
-                                <span class="form-hint">For example: 12345678</span>
+                                <span class="form-hint">It&#8217;s 8 numbers with no letters, punctuation or other characters.</span>
                             </label>
-                            <input class="form-control" name="mlr" type="text" id="mlr">
+                            <input class="form-control" name="mlr" type="text" id="mlr" pattern="[0-9]{8}" title="It&#8217;s 8 numbers with no letters, punctuation or other characters." value="" />
                         </div>
-                    </div>
 
+                    </div>
                 </fieldset>
 
                 <input type="submit" class="button" value="Save and continue">
